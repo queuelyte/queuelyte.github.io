@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+
+.mainBody{
+    margin:20 30;
+    display:flex;
+    align-items:center;
+    flex-direction: column; 
+    font-family: 'Roboto',sans-serif;
+    color: #494b4d;
+}
+
+section.mainBody .heading h2{
+    font-size: 35;
+    font-weight: bold;
+    color:#2a2a2b;
+    font-family: 'Roboto',sans-serif;
+}
+
+section.mainBody .body p{
+    font-size: 18;
+    padding: 10 20;
+    word-wrap: normal;
+}
+
+#goToFooter {
+    cursor: pointer;
+}
+
+#goToTop{
+    cursor: pointer;
+    position:fixed;
+    right:20px;
+    bottom:20px;
+}
