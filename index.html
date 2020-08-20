@@ -3,31 +3,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/privacy.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <title>Sketchkit</title>
 </head>
 <body>
 
-  <header class="text-gray-700 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        <!-- Logo goes Here -->
-        <span class="ml-3 text-xl">Queuelyte</span>
-      </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a class="mr-5 hover:text-gray-900" href="home.html">Home</a>
-        <a class="mr-5 hover:text-gray-900" id="goToFooter">Contact</a>
-      </nav>
-      <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0"  onclick="appLink()">Get App
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </button>
-    </div>
-  </header>
+<!-- Header starts here -->
 
+  <nav class="navLinks">
+    <input type="checkbox" id="check">
+    <label for="chech" class="checkbtn">
+      <i class="fa fa-bars" aria-hidden="true" id="bars"></i>
+    </label>
+    <label class="logo">Queuelyte</label>
+    <ul id="list">
+      <li><a href="#" id="home">Home</a></li>
+      <li><a href="#" id="goToFooter">Contact</a></li>
+      <li><button class="getappbtn" >Get App</button></li>
+    </ul>
+  </nav>
 
-  <section class="text-gray-700 body-font overflow-hidden">
+ <!-- Header ends here -->
+
+  <section class="text-gray-700 body-font overflow-hidden" id="mainbody">
     <div class="container px-5 py-24 mx-auto">
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
         <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400">
@@ -72,7 +72,7 @@
             </span>
           </div>
           <p class="leading-relaxed">Description goes here</p>
-          
+
         </div>
       </div>
     </div>
@@ -168,7 +168,7 @@
     </div> -->
   </footer>
 
-      
+
     <script src="js/main.js"></script>
 </body>
 </html>

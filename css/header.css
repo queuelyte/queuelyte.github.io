@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+
+nav.navLinks {
+    height: 80px;
+    width: 100%;
+    font-family:'Roboto',sans-serif;
+    /* background: #ffe5b4; peach color */
+    background:#7FFFD4;
+    /* color:white; */
+}
+
+label.logo{
+    font-size: 35px;
+    line-height: 80px;
+    padding:0 100px;
+    font-weight: bold;
+}
+
+nav.navLinks ul {
+    float:right;
+    margin-right: 60px;
+    font-size: 20px;
+}
+
+nav.navLinks ul li {
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.checkbtn {
+    font-size:30px;
+    float:right;
+    /* line-height: 80px; */
+    margin-right: 40px;
+    margin-top:25px;
+    cursor: pointer;
+    display:none;
+}
+
+#check{
+    display:none;
+}
+
+footer{
+  background: #7FFFD4;
+}
+
+footer nav li ul a{color:white;}
+
+
+
+/* Code for smaller screen devices goes here */
+
+@media(max-width: 858px){
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #7FFFD4;
+        top: 80px;
+        left: -100%;
+        text-align:center;
+        transition: all 0.2s ease-in-out;
+    }
+
+    nav.navLinks ul li{
+        display:block;
+        font-size: 20px;
+    }
+
+}
