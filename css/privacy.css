@@ -5,7 +5,7 @@
     margin:20 30;
     display:flex;
     align-items:center;
-    flex-direction: column; 
+    flex-direction: column;
     font-family: 'Roboto',sans-serif;
     color: #494b4d;
 }
@@ -32,4 +32,40 @@ section.mainBody .body p{
     position:fixed;
     right:20px;
     bottom:20px;
+}
+
+
+/* For devices with small screen */
+
+@media(max-width: 858px){
+
+  section.mainBody .body p{
+    margin: 40px 0;
+  }
+}
+
+
+@media (max-width: 400px){
+
+  section.mainBody .body p {
+    margin: 40px;
+    font-size:14px;
+  }
+
+  section.mainBody .heading h2{
+    font-size: 20px;
+  }
+
+  section.mainBody .body p{
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 350px){
+
+  section.mainBody .body p{
+    /* margin: 40px; */
+    padding: 40px;
+  }
+
 }
