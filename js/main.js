@@ -2,14 +2,14 @@
 function  appLink(){
     window.location.href ="https://www.google.com";
     if(isOpen == true){
-        list.style.left = "-100%";
+        list.style.bottom = "-100%";
         isOpen = !isOpen;
     }
 }
 
 window.addEventListener('scroll',function(){
   if(isOpen == true){
-      list.style.left = "-100%";
+      list.style.bottom = "-100%";
       isOpen = !isOpen;
   }
 });
@@ -24,7 +24,7 @@ btn.addEventListener("click",function(){
     });
 
     if(isOpen == true){
-        list.style.left = "-100%";
+        list.style.bottom = "-100%";
         isOpen = !isOpen;
     }
 });
@@ -37,25 +37,22 @@ navBtn.addEventListener("click",function(){
     var list = document.getElementById("list")
     console.log(isOpen);
     if(isOpen){
-        list.style.left = 0;
-        list.style.width = "100%";
+        list.style.bottom = 0;
+        list.style.height = "90%";
     }else{
-        list.style.left = "-100%";
+        list.style.bottom = "-100%";
     }
 });
-
-var body = document.getElementById("mainbody");
-body.addEventListener("click",function(){
-    if(isOpen == true){
-        list.style.left = "-100%";
-        isOpen = !isOpen;
-    }
-});
-
 var home = document.getElementById("home");
 home.addEventListener("click",function(){
     if(isOpen == true){
-        list.style.left = "-100%";
+        list.style.bottom = "-100%";
         isOpen = !isOpen;
     }
+});
+
+
+var bottomTag = document.getElementById('bottom-tag');
+bottomTag.addEventListener('click',()=>{
+    window.scrollTo({top: 0, bottom: 0,behavior:"smooth"});
 });
