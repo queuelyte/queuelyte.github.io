@@ -57,6 +57,7 @@ section.mainBody .parentDiv .appData h3{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     section.mainBody .parentDiv .appImage img.image{

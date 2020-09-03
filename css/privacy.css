@@ -49,9 +49,9 @@ section.mainBody {
 
   .mainBody{
     width: 100%;
-    border:  2px solid red;
     padding: 20px 30px;
   }
+  
 
   .mainBody .body p {
     padding: 20px;
