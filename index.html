@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="css/privacy.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="css/footer.css" >
     <title>Queuelyte</title>
 </head>
 <body>
@@ -19,175 +20,69 @@
         <i class="fa fa-bars" aria-hidden="true" id="bars"></i>
       </label>
       <label class="logo">Queuelyte</label>
-      <ul id="list">
+      <ul id="list" class="list">
         <li><a href="#" id="home">Home</a></li>
         <li><a href="#" id="goToFooter">Contact</a></li>
-        <li><button class="getappbtn" >Get App</button></li>
+        <li><button class="getappbtn" onclick="appLink()">Get App</button></li>
       </ul>
     </nav>
   </div>
 
  <!-- Header ends here -->
 
-  <section class="text-gray-700 body-font overflow-hidden" id="mainbody">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="lg:w-4/5 mx-auto flex flex-wrap">
-        <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="/assets/app_icon.png">
-        <!-- <img src="assets/app_icon.png" width="200"> -->
-        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-          <h2 class="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>
-          <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Sketchkit</h1>
-          <div class="flex mb-4">
-            <span class="flex items-center">
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
-              <span class="text-gray-600 ml-3">4 Reviews</span>
-            </span>
-            <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200">
-              <a class="text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-2 text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-          <p class="leading-relaxed">Sketchkit is an awesome toolkit to create awesome new things .<br>
+<!-- Body goes here -->
 
-Sketchkit has various tools you need to create awesome social media posts.<br><br>
-
-1) Filters - Let's you add cool new filters for your photos<br>
-2)9Grid - Splits your image into 9 pieces.<br>
-3) Chopper - Splits images into 2 pieces<br>
-4) Captions - Special handpicked captions for your social media posts.<br>
-5) Hashtags - Let's you add the trending Hastags for your posts.<br>
-6) Fancy Fonts- Want your captions to look cool? Then check out fancy font .<br><br>
-
-All the above tools let's you create cool and awesome things.<br>
-Share the app and get free trails.<br>
-The app is completely FREE to use.<br>
-You can share this on any platform and unlock more trials .Yes, there is no limits.<br>
-
-For feedbacks please contact us  here -- queuelyte@gmail.com</p><br>
-
-        </div>
+  <section class="mainBody">
+    <div class="parentDiv">
+      <div class="appImage"><img class ="image" src="/assets/custom1.png" alt=""></div>
+      <div class="appData">
+        <h2>
+          Sketchkit
+        </h2>
+        <h3>Sketchkit is an awesome toolkit to create awesome new things .<br>
+          Sketchkit has various tools you need to create awesome social media posts.<br><br>
+          
+          1) Filters - Let's you add cool new filters for your photos<br>
+          2)9Grid - Splits your image into 9 pieces.<br>
+          3) Chopper - Splits images into 2 pieces<br>
+          4) Captions - Special handpicked captions for your social media posts.
+          5) Hashtags - Let's you add the trending Hastags for your posts.<br>
+          6) Fancy Fonts- Want your captions to look cool? Then check out fancy font.<br><br>
+          
+          All the above tools let's you create cool and awesome things.<br>
+          Share the app and get free trails.
+          The app is completely FREE to use.
+          You can share this on any platform and unlock more trials .Yes, there is no limits.<br>
+          For feedbacks please contact us here -- queuelyte@gmail.com</h3>
       </div>
     </div>
   </section>
 
+<!-- Body ends here -->
+
 <!-- Footer starts here -->
-  <footer class="text-gray-700 body-font">
-    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
-      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-         <!-- Footer Icons goes Here -->
-          <span class="ml-3 text-xl" id="bottom-tag">Queuelyte</span>
-        </a>
-        <p class="mt-2 text-sm text-gray-500">
-          <!-- Tag Goes Here  -->
-        </p>
+
+  <footer>
+    <div class="mainFooterBody">
+      <div class="footerHeading">
+        <h1>Queuelyte</h1>
       </div>
-      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2>
-          <!-- <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Bhavish Assai</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Vikas Rai</a>
-            </li>
-          </nav> -->
+      <div class="footerNav">
+        <div class="footerContent">
+          <div class="heading"><h2>Email</h2></div>
+          <div class="contents">queuelyte@gmail.com</div>
         </div>
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Email</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">queuelyte@gmail.com</a>
-            </li>
-          </nav>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Social Media</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Facebook</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Instagram</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">YouTube</a>
-            </li>
-          </nav>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">About App</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800" href="products/sketchkit/privacy.html">Privacy Policy</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800" href="products/sketchkit/terms.html">Terms & Conditions</a>
-            </li>
-          </nav>
+        <div class="footerContent">
+          <div class="heading"><h2>Social Media</h2></div>
+          <div class="contents">FaceBook</div>
+          <div class="contents">Instagram</div>
+          <div class="contents">YouTube</div>
         </div>
       </div>
     </div>
-    <!-- <div class="bg-gray-200">
-      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 tailblocks —
-          <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
-        </p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-          <a class="text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
-        </span>
-      </div>
-    </div> -->
   </footer>
+
+
 
   <!-- Footer ends here -->
 

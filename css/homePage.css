@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: 'Roboto',sans-serif';
+}
+
+section.mainBody{
+    display:flex;
+    flex-direction: column;
+}
+
+section.mainBody .parentDiv{
+    display: flex;
+    flex-direction: row;
+    padding:25px;
+    margin:25px;
+}
+
+section.mainBody .parentDiv .appImage img.image{
+    width: 80%;
+    height: auto;
+}
+
+section.mainBody .parentDiv .appData{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    justify-content: center;
+}
+
+section.mainBody .parentDiv .appData h2{
+    font-size:40px;
+    padding: 20px;
+    color:black;
+}
+
+section.mainBody .parentDiv .appData h3{
+    font-size:18px;
+    padding: 20px;
+    color:grey;
+    font-weight: 400;
+}
+
+@media(max-width: 858px){
+    section.mainBody{
+        display:flex;
+        flex-direction: column;
+    }
+
+    section.mainBody .parentDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.mainBody .parentDiv .appImage img.image{
+        height:400px;
+        width: auto;
+        margin: 10px;
+    }
+
+    section.mainBody .parentDiv .appData h2{
+        text-align:start;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    section.mainBody .parentDiv .appData h3{
+        font-size: 16px;
+    }
+}

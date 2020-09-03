@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+a{
+    color:black;
+}
+
 ul, li{
     list-style-type: none;
 }
@@ -64,11 +68,23 @@ footer{
 
 footer nav li ul a{color:white;}
 
+.header nav.navLinks ul.list li button.getappbtn{
+    padding: 5px 10px;
+    color:black;
+    background-color: white;
+    font-size: 14px;
+    font-family: 'Roboto',sans-serif;
+}
+
 
 
 /* Code for smaller screen devices goes here */
 
 @media(max-width: 858px){
+
+    .header{
+        width:100%;
+    }
 
     .checkbtn {
         display: block;

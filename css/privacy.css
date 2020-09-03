@@ -45,10 +45,12 @@ section.mainBody {
 }
 
 
-@media (max-width: 400px){
+@media (max-width: 858px){
 
   .mainBody{
-    width: 80%;
+    width: 100%;
+    border:  2px solid red;
+    padding: 20px 30px;
   }
 
   .mainBody .body p {
