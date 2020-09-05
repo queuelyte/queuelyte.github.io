@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.mainBody{
+    margin: 10px;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column; 
+}
+
+section.mainBody .mainWebCont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+section.mainBody .mainWebCont .mainLogo{
+    width: 50%;
+    margin-right: 10px;
+}
+
+section.mainBody .mainWebCont .mainContent{
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+    padding: 20;
+}
+
+section.mainBody .mainWebCont .mainContent h1{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section.mainBody .mainWebCont .mainContent p{
+    font-size: 20px;
+    color:grey;
+    font: weight 400;
+    margin-top: 10px;
+}
+
+
+section.mainBody .products{
+    padding:30px;
+    margin-top:10px;
+}
+
+section.mainBody .products .productCard{
+    padding: 15;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px #b9b8b8;
+}
+
+section.mainBody .products .productCard .productContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.mainBody .products .productCard .productContent h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+section.mainBody .products .productCard .productLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section.mainBody .products .productCard .productContent p{
+    font-size: 18px;
+    margin-top:5px;
+}
+
+section.mainBody .products .productCard .productContent .buttons{
+    padding: 5px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+section.mainBody .products .productCard .productContent .buttons button.privacy{
+    padding:10px;
+    margin: 10px 0;
+    border: none;
+    color:black;
+    margin-right: 25px;
+    background-color:  #7FFFD4;
+}
+
+section.mainBody .products .productHeading {
+    padding: 20px 5px;
+    font-size: 25px;
+}
+
+section.mainBody .products .productCard .productLogo{
+    margin-right: 15px;
+}
+
+
+@media(max-width: 858px){
+
+    section.mainBody .mainWebCont{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    section.mainBody .mainWebCont .mainContent h1{
+        font-size: 35px;
+    }
+
+    section.mainBody .mainWebCont .mainContent p{
+        font-size:16px;
+    }
+
+    section.mainBody .products .productCard{
+        width: 100%;
+    }
+
+    section.mainBody .products .productCard .productContent h2{
+        font-size: 20px;
+    }
+
+    section.mainBody .products .productCard .productLogo{
+        margin-right: 15px;
+    }
+
+    section.mainBody .products .productCard .productContent p{
+        font-size: 14px;
+    }
+
+    section.mainBody .products .productCard .productContent .buttons{
+        width: 100%;
+    }
+
+    section.mainBody .products .productHeading{
+        font-size: 20px;
+    }
+}

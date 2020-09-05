@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+footer .mainFooterBody .footerHeading{
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: bold;
+}
+
 footer .mainFooterBody{
     display: flex;
     flex-direction: row;
@@ -35,6 +41,8 @@ footer .mainFooterBody .footerNav .heading{
 
 footer .mainFooterBody .footerNav .contents {
     font-size: 16px;
+    display:flex;
+    flex-direction: column;
     color:grey;
     text-align:center;
     font-weight: 400;

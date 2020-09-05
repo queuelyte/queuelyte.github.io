@@ -2,16 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/privacy.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/footer.css" >
-    <link rel="stylesheet" href="css/mainHomePage.css">
-    <title>Queuelyte</title>
+    <link rel="stylesheet" href="/css/sketchkitHomePage.css">
+    <title>Sketchkit</title>
 </head>
 <body>
-
-<!-- Header starts here -->
+    
+    <!-- Header starts here -->
 
   <div class="header">
     <nav class="navLinks">
@@ -31,41 +31,6 @@
  <!-- Header ends here -->
 
  <section class="mainBody">
-   <div class="mainWebCont">
-     <div class="mainLogo">
-       <img src="/assets/custom1.png" width="80%">
-     </div>
-     <div class="mainContent">
-       <h1>Queuelyte</h1>
-       <p>This is a sample text for queuelyte website</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum nobis modi cupiditate natus! Quaerat voluptas alias ipsum hic impedit. Tempora expedita excepturi enim nulla perspiciatis quae ipsa nihil libero error!
-      </p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, placeat delectus hic officiis perspiciatis illum. Delectus, quos, optio sint voluptate vel itaque totam ab voluptatum aspernatur exercitationem aliquam incidunt ea?</p>
-     </div>
-   </div>
-
-   <div class="products">
-     <div class="productHeading">
-       <h1>Products</h1>
-     </div>
-     <div class="productCard" id="sketchkitCard">
-       <div class="productLogo">
-         <img src="assets/app_icon.png" height="115px">
-       </div>
-       <div class="productContent">
-         <h2>Sketchkit</h2>
-         <p>Queuelyte develops products which helps users save their time and makes them more productive.
-          </p>
-          <div class="buttons">
-            <button class="privacy" onClick="sketchkitPrivacy()">Privacy Policy</button>
-            <button class="privacy" onClick="sketchkitTerms">Terms & Conditions</button>
-          </div>
-       </div>
-     </div>
-   </div>
- </section>
-
-  <!-- <section class="mainBody">
     <div class="parentDiv">
       <div class="appImage"><img class ="image" src="/assets/custom1.png" alt=""></div>
       <div class="appData">
@@ -87,13 +52,17 @@
           The app is completely FREE to use.
           You can share this on any platform and unlock more trials .Yes, there is no limits.<br>
           For feedbacks please contact us here -- queuelyte@gmail.com</h3>
+
+          <div class="buttons">
+              <button class="privacy" onClick="sketchkitPrivacy()">Privacy Policy</button>
+              <button class="privacy" onClikc="sketchkitTerms()">Terms & Conditions</button>
+          </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-<!-- Body ends here -->
 
-<!-- Footer starts here -->
+    <!-- Footer starts here -->
 
   <footer>
     <div class="mainFooterBody">
@@ -116,11 +85,12 @@
   </footer>
 
 
+    <script src="/js/sketchkit.js"></script>
+    <script src="/js/main.js"></script>
+
 
   <!-- Footer ends here -->
 
 
-    <script src="js/main.js"></script>
-    <script src="js/sketchkit.js"></script>
 </body>
 </html>

@@ -2,14 +2,14 @@
 function  appLink(){
     window.location.href ="https://www.google.com";
     if(isOpen == true){
-        list.style.bottom = "-100%";
+        list.style.bottom = "-110%";
         isOpen = !isOpen;
     }
 }
 
 window.addEventListener('scroll',function(){
   if(isOpen == true){
-      list.style.bottom = "-100%";
+      list.style.bottom = "-110%";
       isOpen = !isOpen;
   }
 });
@@ -24,7 +24,7 @@ btn.addEventListener("click",function(){
     });
 
     if(isOpen == true){
-        list.style.bottom = "-100%";
+        list.style.bottom = "-110%";
         isOpen = !isOpen;
     }
 });
@@ -38,15 +38,15 @@ navBtn.addEventListener("click",function(){
     console.log(isOpen);
     if(isOpen){
         list.style.bottom = 0;
-        list.style.height = "90%";
+        list.style.height = "85%";
     }else{
-        list.style.bottom = "-100%";
+        list.style.bottom = "-110%";
     }
 });
 var home = document.getElementById("home");
 home.addEventListener("click",function(){
     if(isOpen == true){
-        list.style.bottom = "-100%";
+        list.style.bottom = "-110%";
         isOpen = !isOpen;
     }
 });

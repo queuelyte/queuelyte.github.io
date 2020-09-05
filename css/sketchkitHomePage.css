@@ -12,6 +12,7 @@
 section.mainBody{
     display:flex;
     flex-direction: column;
+    width: 90%;
 }
 
 section.mainBody .parentDiv{
@@ -19,6 +20,7 @@ section.mainBody .parentDiv{
     flex-direction: row;
     padding:25px;
     margin:25px;
+    width: 100%;
 }
 
 section.mainBody .parentDiv .appImage img.image{
@@ -30,6 +32,7 @@ section.mainBody .parentDiv .appData{
     display: flex;
     flex-direction: column;
     align-items: start;
+    width: 100%;
     padding: 20px;
     justify-content: center;
 }
@@ -47,10 +50,27 @@ section.mainBody .parentDiv .appData h3{
     font-weight: 400;
 }
 
+section.mainBody .parentDiv .appData div.buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+section.mainBody .parentDiv .appData .buttons button.privacy{
+    padding: 10px 20px;
+    margin: 10px 40px;
+    border: none;
+    background-color: #7FFFD4;
+}
+
 @media(max-width: 858px){
+    
     section.mainBody{
         display:flex;
         flex-direction: column;
+        margin:2px solid black;
     }
 
     section.mainBody .parentDiv{
@@ -58,11 +78,11 @@ section.mainBody .parentDiv .appData h3{
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin:2px solid red;
     }
 
     section.mainBody .parentDiv .appImage img.image{
-        height:400px;
-        width: auto;
+        width:100%;
         margin: 10px;
     }
 
@@ -74,5 +94,27 @@ section.mainBody .parentDiv .appData h3{
 
     section.mainBody .parentDiv .appData h3{
         font-size: 16px;
+    }
+}
+
+@media(max-width: 858px){
+
+    section.mainBody .parentDiv{
+        display:flex;
+        flex-direction: column; 
+    }
+
+    section.mainBody .parentDiv .appImage{
+        display: flex;
+        justify-content: center;
+    }
+
+    section.mainBody .parentDiv .appImage img.image{
+        width: 50%;
+    }
+
+    section.mainBody .parentDiv .appData .buttons button.privacy{
+        padding: 5px 10px;
+        margin: 5px 20px;
     }
 }
